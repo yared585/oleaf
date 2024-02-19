@@ -1,0 +1,35 @@
+.car-card {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    text-align: center; /* Center the text */
+    max-width: 100%; /* Set maximum width to fit within the page */
+    overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+    background-color: whitesmoke;
+  }
+  
+  .car-card img {
+    max-width: 45%; /* Set maximum width to fit within container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 10px; /* Add margin around images */
+  }
+  .car-card img:hover {
+    transform: scale(1.2); /* Scale up slightly on hover */
+  }
+  
+  .car-details {
+    margin-top: 20px; /* Add margin between images and text */
+    text-align: center; /* Center the text */
+  }
+  
+
+  .car-details h3 {
+    margin-top: 0;
+  }
+  
+  .car-details p {
+    margin-bottom: 0;
+  }
+  

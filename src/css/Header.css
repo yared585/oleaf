@@ -1,0 +1,89 @@
+.header {
+  background-color: black; /* Transparent black background */
+  text-align: center; /* Center the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Darker shadow color */
+  position: static; /* Make the header fixed */
+  top: 0; /* Position the header at the top of the viewport */
+  width: 100%; /* Set the width to 100% of the viewport */
+  z-index: 999; /* Ensure the header appears on top of other content */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 0 1px #000;
+  height: 115px;
+}
+
+.button-container button {  background-color: burlywood; /* Blue background color */
+  color: white; /* White text color */
+  padding: 15px 30px; /* Increase padding for a bigger button */
+  border: none; /* Remove border */
+  border-radius: 7px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition effect */
+  font-size: 17px;
+  margin-left: 350px;
+  margin-left: 80px; /* Reset margin to prevent the button from moving */
+}
+.header button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Move button slightly up on hover */
+}
+  
+
+.header img {
+    width: auto; /* Display the image at its original width */
+    height: auto; /* Display the image at its original height */
+    max-width: 140px; /* Set maximum width to limit the size of the logo */
+    margin-bottom: 7px; /* Add spacing between logo and other content */
+    float: left;
+    box-shadow: 2px 2px 4px black(255, 255, 255, 1.5); /* Adjust shadow color to match header background */
+    margin-left: 7px;
+}
+  
+
+  .header a:hover {
+    color: white;  /* Change the link text color on hover */
+    box-shadow: none; /* Remove the shadow on hover */
+  }
+  
+  .header-links {
+    margin-left: 240px; /* Move the header links to the right */
+  }
+  
+  .header-links a {
+    color: bisque; /* Link text color */
+    text-decoration: none; /* Remove default underline */
+    margin: 0 10px; /* Add margin to the left and right of each link */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-family: sans-serif; /* Set font family */
+    font-weight: bold; /* Set font weight to bold */
+  }
+
+
+  
+ /* Custom styles for the icons */
+.contact-info .icon {
+    margin-right: 5px; /* Add spacing between the icon and text */
+    font-size: 1.5em; /* Adjust icon size (increase it from 1.2em to 1.5em) */
+    vertical-align: middle; /* Align the icons vertically in the middle */
+}
+
+.contact-info .icon.phone {
+    color: green; /* Change color for phone icon */
+}
+
+.contact-info .icon.email {
+    color: #28a745; /* Change color for email icon */
+}
+
+.contact-info {
+    padding: 25px 0; /* Add padding to the top and bottom of the contact info */
+}
+
+.contact-info a {
+    margin-bottom: 10px; /* Add margin between each link */
+    vertical-align: middle; /* Align the text vertically in the middle */
+    font-weight: bold; /* Make text bold */
+    padding-left: 70px;
+    font-size: x-large;
+}
