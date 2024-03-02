@@ -1,18 +1,17 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import './css/footer.css'
+import './css/footer.css';
 import './css/ContactUs.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { Button, DatePicker, Card } from 'antd';
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
 
 reportWebVitals();

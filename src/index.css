@@ -1,5 +1,5 @@
 .home {
-  padding-top: 0px; /* Add padding to the top to create space for the fixed header */
+  padding-top: 800px; /* Add padding to the top to create space for the fixed header */
   padding-right: 20px; /* Adjust right padding to provide more space for the content */
   padding-left: 20px; /* Adjust left padding to provide more space for the content */
 
@@ -24,7 +24,7 @@
 }
 
 .overlay-text p {
-  margin: 0; /* Remove default margin */
+  margin: -400px; /* Remove default margin */
   font-size: 30px; /* Set font size */
   font-weight: bold; /* Set font weight */
   color: white; /* Set text color */
@@ -67,7 +67,7 @@ padding-top: 100px;
   
 
 .makeReservation button {
-  background-color: burlywood; /* Green background */
+  background-color: black;
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 15px 32px; /* Padding */
@@ -78,6 +78,7 @@ padding-top: 100px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Box shadow */
   cursor: pointer; /* Add hover effect */
   transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition for smooth effect */
+  line-height: 0cap; /* Vertically center the text */
 }
 
 .makeReservation button:hover {

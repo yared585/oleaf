@@ -6,9 +6,9 @@ const Footer = () => {
             <div className="footer-content">
         <div className="footer-info">
           <h3>Contact Us</h3>
-          <p>1120 Tanley Rd </p>
+          <p>15 Valleyfield Court</p>
           <p>Silver Spring, Maryland</p>
-          <p>Email: 1120 Tanley Rd Silver Spring, MD 20904</p>
+          <p>Email: Asechu3028@gmail.com</p>
           <p>Phone: +1 (240) 316-1353</p>
         </div>
         <div className="footer-social">

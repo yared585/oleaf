@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ContacUs from './ContactUs';
 import 'antd/dist/reset.css';
 import ViewCars from './ViewCars';
+import 'antd/dist/reset.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
   return (
@@ -18,6 +23,7 @@ function App() {
           <Route exact path="/ContactUs" component={ContacUs} />
           <Route exact path="/ViewCars" component={ViewCars} /> {/* Add this line */}
         </Switch>
+        <ToastContainer />
         <Footer />
       </div>
     </Router>
