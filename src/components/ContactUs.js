@@ -12,7 +12,7 @@ const firebaseConfig = {
     projectId: "oleaf-9f9d5",
     storageBucket: "oleaf-9f9d5.appspot.com",
     messagingSenderId: "613919859510",
-    appId: "1:613919859510:web:0a8d1d15a3f64da057c997"
+    appId: "1:613919859510:web:0a8d1d15a3f64da057c997n"
   };
 
 if (!firebase.apps.length) {
@@ -22,14 +22,16 @@ if (!firebase.apps.length) {
 }
 
 const ContactUs = () => {
+
     const [contactForm, setFormData] = useState({
       name: '',
       email: '',
       message: '',
-      phone: ''
+      phone: '',
     });
   
     const handleChange = (e) => {
+
       const { name, value } = e.target;
       setFormData({
         ...contactForm,
@@ -38,20 +40,23 @@ const ContactUs = () => {
     };
   
     const handleSubmit = async (e) => {
-      e.preventDefault();
-      console.log('Form submitted'); // Check if the form is being submitted
-      console.log(contactForm); // Log form data before sending
-      alert(JSON.stringify(contactForm, null, 2));
-  
+        e.preventDefault();
+        console.log('Form submitted'); // Check if the form is being submitted
+        console.log(contactForm); // Log form data before sending
+        alert(JSON.stringify(contactForm, null, 2));
+
       try {
-        
         const db = firebase.firestore();
         await db.collection('contactForms').add(contactForm);
         console.log('Form submitted successfully');
-    
-    // Display an alert with the form input values
+
+      // Display a success toast notification
+       toast.success('Form submitted successfully!', {
+     
+      });
+
+       // Display an alert with the form input values
         alert(JSON.stringify(contactForm, null, 2));
-        
         
         // Clear the form after submission if needed
         setFormData({
@@ -123,7 +128,7 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
-        <ToastContainer />
+         <ToastContainer />
       </div>
     );
   };

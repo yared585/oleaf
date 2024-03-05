@@ -9,14 +9,14 @@ const { Content } = Layout;
 const Home = () => {
   return (
     <Content style={{ padding: "", marginTop: '-56px' }}>
-      <div className="site-layout-content">
+      <div className="home">
         {/* Container for all content */}
         <div style={{ paddingTop: '56px' }}>
           {/* First Row for the first image */}
           <Row justify="center">
             <Col xs={24} sm={20} md={16} lg={12} xl={10}>
               <div className="car">
-                <img src={bannerImage} alt="Car 1" style={{ maxWidth: '200%', height: 'auto', marginLeft: "-250px" }} />
+                <img src={bannerImage} alt="Car 1" style={{ maxWidth: '200%', height: 'auto', marginLeft: "-250px", marginTop: "-55px" }} />
                 <div className="overlay-text">
                   <p>Let's start our journey together.</p>
                 </div>
@@ -27,8 +27,8 @@ const Home = () => {
           <Row gutter={[16, 16]} justify="center">
             <Col xs={24} sm={20} md={16} lg={12} xl={10}>
               <div style={{marginTop: "80px"}} className="service">
-                <h2>OLEAF LLC CHAUFFEURED TRANSPORTATION</h2>
-                <p>
+                <h2 style={{color: "white"}} >OLEAF LLC CHAUFFEURED TRANSPORTATION</h2>
+                <p style={{color: "white"}} >
                   provides premier Black car and Black SUV services in Washington DC.
                   Besides rides to the airport, people trust us for all kinds of events
                   like going to hotels, weddings, meetings, and family get-togethers. We
@@ -42,8 +42,8 @@ const Home = () => {
           <Row style={{marginTop: "80px"}} gutter={[16, 16]} justify="center">
             <Col style={{marginTop: "50px"}}  xs={24} sm={20} md={16} lg={12} xl={10}>
               <div className="car2-text">
-                <h2>Experience the thrill of the open road with the iconic Benz.</h2>
-                <p>
+                <h2 style={{color: "white"}} > Experience the thrill of the open road with the iconic Benz.</h2>
+                <p style={{color: "white"}} >
                   Its powerful engine, sleek design, and agile handling make it a favorite
                   among performance enthusiasts.
                 </p>

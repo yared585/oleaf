@@ -1,6 +1,10 @@
 .ContactUs {
     text-align: left;
     margin-top: -40px; /* Add margin to the top */
+    background-image: url(https://th.bing.com/th/id/OIP._korYlBZ99TFSu4SMT0ojQHaFQ?w=296&h=210&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+        margin-top: -100px;
+    
+      
 }
 
 .contact-content {
