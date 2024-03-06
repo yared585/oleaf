@@ -28,6 +28,7 @@ const ContactUs = () => {
       email: '',
       message: '',
       phone: '',
+      time: ''
     });
   
     const handleChange = (e) => {
@@ -43,20 +44,23 @@ const ContactUs = () => {
         e.preventDefault();
         console.log('Form submitted'); // Check if the form is being submitted
         console.log(contactForm); // Log form data before sending
-        alert(JSON.stringify(contactForm, null, 2));
+       
+        // alert(JSON.stringify(contactForm, null, 2));
 
-      try {
+       try {
         const db = firebase.firestore();
-        await db.collection('contactForms').add(contactForm);
+        const formDataWithTime = {
+            ...contactForm,
+            time: firebase.firestore.FieldValue.serverTimestamp() // Add the current server timestamp
+        };
+        await db.collection('contactForms').add(formDataWithTime);
         console.log('Form submitted successfully');
 
-      // Display a success toast notification
-       toast.success('Form submitted successfully!', {
-     
-      });
+        // Display a success toast notification
+        toast.success('Form submitted successfully!');
 
        // Display an alert with the form input values
-        alert(JSON.stringify(contactForm, null, 2));
+       // alert(JSON.stringify(contactForm, null, 2));
         
         // Clear the form after submission if needed
         setFormData({
@@ -68,7 +72,7 @@ const ContactUs = () => {
         });
       } catch (error) {
         console.error('Error:', error);
-        alert('Form submission failed');
+      //  alert('Form submission failed');
       }
     };
   
