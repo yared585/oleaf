@@ -80,10 +80,16 @@ const ContactUs = () => {
       <div className="ContactUs">
         <div className="contact-content">
           <div className="contact-info">
-            <h1 style={{ fontSize: '50px' }}>CONTACT US.</h1>
-            <p><strong>Email:</strong> Asechu3028@gmail.com</p>
-            <p><strong>Phone:</strong> +1 (240) 316-1353</p>
-            <p><strong>Address:</strong> 15 Valleyfield Court, Silver Spring MD</p>
+            <h1 style={{ fontSize: "50px" }}>CONTACT US.</h1>
+            <p>
+              <strong>Email:</strong> Asechu3028@gmail.com
+            </p>
+            <p>
+              <strong>Phone:</strong> +1 (240) 316-1353
+            </p>
+            <p>
+              <strong>Address:</strong> 15 Valleyfield Court, Silver Spring MD
+            </p>
           </div>
           <div className="contact-form">
             <h3>Send Us a Message</h3>
@@ -132,7 +138,9 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
-         <ToastContainer />
+        <div className="toast-wrapper">
+          <ToastContainer />
+        </div>
       </div>
     );
   };
