@@ -79,8 +79,8 @@ const ContactUs = () => {
     return (
       <div className="ContactUs">
         <div className="contact-content">
-          <div className="contact-info">
-            <h1 style={{ fontSize: "50px" }}>CONTACT US.</h1>
+          <div style={{marginTop: "40px"}}className="contact-info">
+           
             <p>
               <strong>Email:</strong> Asechu3028@gmail.com
             </p>
@@ -92,7 +92,7 @@ const ContactUs = () => {
             </p>
           </div>
           <div className="contact-form">
-            <h3>Send Us a Message</h3>
+           
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
@@ -112,6 +112,7 @@ const ContactUs = () => {
                   name="email"
                   value={contactForm.email}
                   onChange={handleChange}
+                  required
                 />
               </div>
               <div className="form-group">
@@ -122,6 +123,7 @@ const ContactUs = () => {
                   name="phone"
                   value={contactForm.phone}
                   onChange={handleChange}
+                  required
                 />
               </div>
               <div className="form-group">
@@ -132,9 +134,10 @@ const ContactUs = () => {
                   rows="5"
                   value={contactForm.message}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </div>
-              <button type="submit">Send Message</button>
+              <button style={{marginBottom: "15px"}} type="submit">Send Message</button>
             </form>
           </div>
         </div>

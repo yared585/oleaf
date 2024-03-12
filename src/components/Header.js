@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu, Button } from "antd";
-import { HomeOutlined, CarOutlined, ToolOutlined, PhoneOutlined } from "@ant-design/icons";
+import { HomeOutlined, CarOutlined, ToolOutlined, PhoneOutlined , UserOutlined} from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import logo from "../images/logo/newLogo-modified.png";
 
@@ -9,7 +9,7 @@ const { Header } = Layout;
 const HeaderComponent = () => {
   return (
 
-    <Header className="header" style={{ height: "90px", paddingTop: "20px" }}>
+    <Header className="header" style={{ height: "90px", paddingTop: "20px",  position: "relative"}}>
       {/*
       <div className="logo" style={{ float: "left", height: "100%", marginRight: "40px" }}>
         <Link to="/">
@@ -34,6 +34,9 @@ const HeaderComponent = () => {
           <Button type="primary" href="https://google.com" target="_blank" rel="noopener noreferrer">
             Book your Reservation
           </Button>
+        </Menu.Item>
+        <Menu.Item key="6" icon={<UserOutlined />} style={{ position: "absolute", top: "25px", right: "5px" }}>
+        <a href="https://oleafid.web.app/" target="_blank" rel="noopener noreferrer">Admin</a>
         </Menu.Item>
       </Menu>
     </Header>

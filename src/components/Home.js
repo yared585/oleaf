@@ -16,7 +16,7 @@ const Home = () => {
           <Row justify="center">
             <Col xs={24} sm={20} md={16} lg={12} xl={10}>
               <div className="car">
-                <img src={bannerImage} alt="Car 1" style={{ maxWidth: '200%', height: 'auto', marginLeft: "-250px", marginTop: "-55px" }} />
+                <img src={bannerImage} alt="Car 1" style={{ maxWidth: '200%', height: 'auto', marginLeft: "-250px", marginTop: "-49px" }} />
                 <div className="overlay-text">
                   <p>Let's start our journey together.</p>
                 </div>
