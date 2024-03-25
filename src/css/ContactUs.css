@@ -43,21 +43,21 @@ label {
     margin-bottom: 5px; /* Add space between labels and inputs */
 }
 
-textarea {
-    width: 100%; /* Make textarea full width */
-}
 
 /* Apply styles to form fields */
 input[type="text"],
 input[type="email"],
+input[type="message"],
 textarea {
-    width: 180%; /* Adjust the width as needed */
+    width: 100%; /* Set width to 100% */
+    max-width: 400px; /* Set maximum width */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; /* Ensure padding and border are included in width */
 }
+
 
 /* Style for labels */
 label {

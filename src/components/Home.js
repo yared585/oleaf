@@ -56,9 +56,10 @@ const Home = () => {
           {/* Fourth Row for the "Reserve Now" button */}
           <Row justify="center"> 
               <div className="makeReservation" style={{ textAlign: "center", marginTop: "30px" }}>
-                <Link to="https://google.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://book.mylimobiz.com/v4/oleaf" target="_blank" rel="noopener noreferrer">
                   <Button type="primary">RESERVE NOW</Button>
-                </Link>
+                </a>
+          
               </div>   
           </Row>
         </div>

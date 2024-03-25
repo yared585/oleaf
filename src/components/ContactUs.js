@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app'; // Update the import path
 import 'firebase/compat/firestore'; // Update the import path
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Input, Button } from 'antd'; // Import Ant Design components
 
 
 // Initialize Firebase (make sure you replace this config with your own)
@@ -77,74 +78,54 @@ const ContactUs = () => {
     };
   
     return (
-      <div className="ContactUs">
-        <div className="contact-content">
-          <div style={{marginTop: "40px"}}className="contact-info">
-           
-            <p>
-              <strong>Email:</strong> Asechu3028@gmail.com
-            </p>
-            <p>
-              <strong>Phone:</strong> +1 (240) 316-1353
-            </p>
-            <p>
-              <strong>Address:</strong> 15 Valleyfield Court, Silver Spring MD
-            </p>
-          </div>
-          <div className="contact-form">
-           
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
+        <div className="ContactUs">
+          <div className="contact-content">
+            <div style={{marginTop: "40px"}}className="contact-info">
+              <p><strong>Email:</strong> Asechu3028@gmail.com</p>
+              <p><strong>Phone:</strong> +1 (240) 316-1353</p>
+              <p><strong>Address:</strong> 15 Valleyfield Court, Silver Spring MD</p>
+            </div>
+            <div className="contact-form">
+              <form onSubmit={handleSubmit}>
+                <Input
+                  placeholder="Name"
                   value={contactForm.name}
                   onChange={handleChange}
+                  name="name"
+                  required
                 />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
+                <Input
+                  placeholder="Email"
                   value={contactForm.email}
                   onChange={handleChange}
+                  name="email"
                   required
                 />
-              </div>
-              <div className="form-group">
-                <label htmlFor="Phone">Phone:</label>
-                <input
-                  type="phone"
-                  id="phone"
-                  name="phone"
+                <Input
+                  placeholder="Phone"
                   value={contactForm.phone}
                   onChange={handleChange}
+                  name="phone"
                   required
                 />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
+                <Input.TextArea
+                  placeholder="Message"
+                  rows={5}
                   value={contactForm.message}
                   onChange={handleChange}
+                  name="message"
                   required
-                ></textarea>
-              </div>
-              <button style={{marginBottom: "15px"}} type="submit">Send Message</button>
-            </form>
+                />
+                <Button type="primary" htmlType="submit" style={{ marginBottom: "30px", marginTop: "20px" }}>
+                  Send Message
+                </Button>
+              </form>
+            </div>
+          </div>
+          <div className="toast-wrapper">
+            <ToastContainer />
           </div>
         </div>
-        <div className="toast-wrapper">
-          <ToastContainer />
-        </div>
-      </div>
     );
   };
   
